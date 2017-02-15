@@ -1,0 +1,16 @@
+[
+{
+  "modid": "deadlydimensions",
+  "name": "Deadly Dimensions",
+  "description": "This is a mod that simply applies a potion effect to players in different dimensions. Its fully customizable in configs too!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["OCDiary"],
+  "credits": "",
+  "logoFile": "assets/DeadlyDimensions/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

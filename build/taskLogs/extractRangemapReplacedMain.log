@@ -1,0 +1,34 @@
+Symbol range map extraction starting
+Processing 8 files
+startProcessing "com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java" md5: c6408355cb709cb756776827cb79fbc9
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\config\DEConfig.java" md5: 5c15f9c84d3a1c1f0db80e3eb29a1399
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\config\DEConfig.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\lib\refs.java" md5: b7d2213e10478e90478bbbafed2a3bb7
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\lib\refs.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\main\EndEvents.java" md5: 5ef5530079212279eae986965d776a72
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\main\EndEvents.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\main\NetherEvents.java" md5: a1c84e0342e241d0ade5feff946bb95d
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\main\NetherEvents.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java" md5: 9fbabf30ea6c75fde2a03e97ebadc1ed
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\proxies\client.java" md5: a4e3915f3af318224730d0ea88bff39a
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\proxies\client.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\proxies\common.java" md5: 0a606827a725e3436d1c94a9a4729c45
+Cache Hit!
+endProcessing "com\ocdiary\DeadlyEnvironment\proxies\common.java"
+

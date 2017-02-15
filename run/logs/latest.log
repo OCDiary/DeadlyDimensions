@@ -1,0 +1,46 @@
+[23:45:49] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[23:45:53] [Server thread/INFO]: Loading properties
+[23:45:53] [Server thread/INFO]: Default game type: SURVIVAL
+[23:45:53] [Server thread/INFO]: Generating keypair
+[23:45:53] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:45:53] [Server thread/INFO]: Using default channel type
+[23:45:54] [Server thread/INFO]: Preparing level "world"
+[23:46:14] [Server thread/INFO]: Preparing start region for level 0
+[23:46:16] [Server thread/INFO]: Preparing spawn area: 0%
+[23:46:17] [Server thread/INFO]: Preparing spawn area: 44%
+[23:46:18] [Server thread/INFO]: Done (23.623s)! For help, type "help" or "?"
+[23:46:44] [Server thread/INFO]: com.mojang.authlib.GameProfile@79746133[id=<null>,name=Player246,properties={},legacy=false] (/127.0.0.1:50237) lost connection: Disconnected
+[23:46:56] [Server thread/INFO]: Stopping server
+[23:46:56] [Server thread/INFO]: Saving players
+[23:46:56] [Server thread/INFO]: Saving worlds
+[23:46:56] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[23:46:56] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[23:46:56] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[23:46:56] [Server Shutdown Thread/INFO]: Stopping server
+[23:46:56] [Server Shutdown Thread/INFO]: Saving players
+[23:46:56] [Server Shutdown Thread/INFO]: Saving worlds
+d coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 376.19' Renderer: 'GeForce GTX 980/PCIe/SSE2'
+[23:46:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Deadly Dimensions
+[23:46:12] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: DeadlyDimensions/ in D:\Modding\1.11\DeadlyDimensions\out\production\DeadlyDimensions_main
+[23:46:19] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:46:19] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[23:46:19] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:46:19] [Thread-7/INFO]: OpenAL initialized.
+[23:46:19] [Sound Library Loader/INFO]: Sound engine started
+[23:46:25] [Client thread/INFO]: Created: 16x16 textures-atlas
+[23:46:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Deadly Dimensions
+[23:46:27] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: DeadlyDimensions/ in D:\Modding\1.11\DeadlyDimensions\out\production\DeadlyDimensions_main
+[23:46:31] [Client thread/INFO]: SoundSystem shutting down...
+[23:46:31] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[23:46:31] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:46:32] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[23:46:32] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:46:32] [Thread-9/INFO]: OpenAL initialized.
+[23:46:32] [Sound Library Loader/INFO]: Sound engine started
+[23:46:36] [Client thread/INFO]: Created: 512x512 textures-atlas
+[23:46:38] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[23:46:44] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[23:46:49] [Client thread/INFO]: Stopping!
+[23:46:49] [Client thread/INFO]: SoundSystem shutting down...
+[23:46:49] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

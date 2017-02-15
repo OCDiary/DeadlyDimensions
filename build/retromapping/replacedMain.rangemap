@@ -1,0 +1,520 @@
+Symbol range map extraction starting
+Processing 8 files
+startProcessing "com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java" md5: c6408355cb709cb756776827cb79fbc9
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|8|37|com.ocdiary.DeadlyEnvironment|package|com.ocdiary.DeadlyEnvironment|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1026|1029|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1030|1035|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1038|1042|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1043|1048|MODID|field|com.ocdiary.DeadlyEnvironment.lib.refs|MODID
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1050|1054|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1057|1061|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1062|1066|NAME|field|com.ocdiary.DeadlyEnvironment.lib.refs|NAME
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1068|1075|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1078|1082|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1083|1090|VERSION|field|com.ocdiary.DeadlyEnvironment.lib.refs|VERSION
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1105|1122|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1158|1175|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1131|1139|Instance|class|net.minecraftforge.fml.common.Mod.Instance
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1158|1175|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1176|1184|instance|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|instance|
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1271|1277|common|class|com.ocdiary.DeadlyEnvironment.proxies.common
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1192|1202|SidedProxy|class|net.minecraftforge.fml.common.SidedProxy
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1203|1213|clientSide|method|net.minecraftforge.fml.common.SidedProxy|clientSide|()Ljava/lang/String;
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1216|1220|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1221|1226|CPROX|field|com.ocdiary.DeadlyEnvironment.lib.refs|CPROX
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1228|1238|serverSide|method|net.minecraftforge.fml.common.SidedProxy|serverSide|()Ljava/lang/String;
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1241|1245|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1246|1251|SPROX|field|com.ocdiary.DeadlyEnvironment.lib.refs|SPROX
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1271|1277|common|class|com.ocdiary.DeadlyEnvironment.proxies.common
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1278|1283|proxy|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|proxy|
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1304|1317|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1304|1317|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1318|1324|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config|
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1345|1351|Logger|class|org.apache.logging.log4j.Logger
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1345|1351|Logger|class|org.apache.logging.log4j.Logger
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1352|1355|log|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|log|
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1358|1364|FMLLog|class|net.minecraftforge.fml.common.FMLLog
+   @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1365|1374|getLogger|method|net.minecraftforge.fml.common.FMLLog|getLogger|()Lorg/apache/logging/log4j/Logger;
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1448|1449|e|param|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1385|1397|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1414|1421|preInit|method|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1422|1447|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1460|1463|log|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|log
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1464|1468|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1510|1516|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1523|1536|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1537|1538|e|param|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1539|1568|getSuggestedConfigurationFile|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getSuggestedConfigurationFile|()Ljava/io/File;
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1581|1589|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1590|1596|config|method|com.ocdiary.DeadlyEnvironment.config.DEConfig|config|()V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1672|1673|e|param|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1615|1627|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1644|1648|init|method|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1649|1671|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1684|1687|log|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|log
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1688|1692|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1800|1801|e|param|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1735|1747|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1764|1772|postInit|method|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1773|1799|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1812|1815|log|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|log
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1816|1820|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1863|1877|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1878|1887|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1888|1896|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1901|1916|OverworldEvents|class|com.ocdiary.DeadlyEnvironment.main.OverworldEvents
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1929|1943|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1944|1953|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1954|1962|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1967|1979|NetherEvents|class|com.ocdiary.DeadlyEnvironment.main.NetherEvents
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|1992|2006|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2007|2016|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2017|2025|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2030|2039|EndEvents|class|com.ocdiary.DeadlyEnvironment.main.EndEvents
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+   Method Start: confChange(Lnet/minecraftforge/fml/client/event/ConfigChangedEvent$OnConfigChangedEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2139|2140|e|param|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|confChange|(Lnet/minecraftforge/fml/client/event/ConfigChangedEvent$OnConfigChangedEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2057|2071|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2088|2098|confChange|method|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|confChange|(Lnet/minecraftforge/fml/client/event/ConfigChangedEvent$OnConfigChangedEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2099|2138|ConfigChangedEvent.OnConfigChangedEvent|class|net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2154|2155|e|param|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|confChange|(Lnet/minecraftforge/fml/client/event/ConfigChangedEvent$OnConfigChangedEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2156|2164|getModID|method|net.minecraftforge.fml.client.event.ConfigChangedEvent|getModID|()Ljava/lang/String;
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2167|2173|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2174|2178|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2179|2184|MODID|field|com.ocdiary.DeadlyEnvironment.lib.refs|MODID
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2200|2208|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+      @|com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java|2209|2215|config|method|com.ocdiary.DeadlyEnvironment.config.DEConfig|config|()V
+   Method End: confChange(Lnet/minecraftforge/fml/client/event/ConfigChangedEvent$OnConfigChangedEvent;)V
+Class End  : com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+endProcessing "com\ocdiary\DeadlyEnvironment\DeadlyEnvironment.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\config\DEConfig.java" md5: 5c15f9c84d3a1c1f0db80e3eb29a1399
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|8|44|com.ocdiary.DeadlyEnvironment.config|package|com.ocdiary.DeadlyEnvironment.config|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|249|257|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|286|298|useOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useOverworld|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|329|350|potionEffectOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectOverworld|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|374|397|potionStrengthOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthOverworld|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|421|444|potionDurationOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationOverworld|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|472|482|rainEffect|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|rainEffect|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|517|535|overworldParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|overworldParticles|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|572|581|useNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useNether|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|612|630|potionEffectNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectNether|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|654|674|potionStrengthNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthNether|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|698|718|potionDurationNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationNether|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|746|761|netherParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|netherParticles|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|798|804|useEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useEnd|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|835|853|potionEffectTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectTheEnd|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|877|897|potionStrengthTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthTheEnd|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|921|941|potionDurationTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationTheEnd|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|969|984|theEndParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|theEndParticles|
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1013|1019|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1013|1019|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1020|1030|effectList|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|effectList|
+   Method Start: config()V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1057|1063|config|method|com.ocdiary.DeadlyEnvironment.config.DEConfig|config|()V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1077|1091|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1092|1101|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1102|1110|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1111|1128|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1129|1137|instance|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|instance
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1155|1161|String|class|java.lang.String
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1174|1191|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1192|1198|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1199|1215|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1218|1235|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1236|1242|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1243|1260|CATEGORY_SPLITTER|field|net.minecraftforge.common.config.Configuration|CATEGORY_SPLITTER
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1289|1306|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1307|1313|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1314|1338|addCustomCategoryComment|method|net.minecraftforge.common.config.Configuration|addCustomCategoryComment|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1416|1426|effectList|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|effectList
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1429|1446|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1447|1453|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1454|1457|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1556|1565|getString|method|net.minecraftforge.common.config.Property|getString|()Ljava/lang/String;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1577|1587|effectList|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|effectList
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1590|1607|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1608|1614|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1615|1618|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1734|1743|getString|method|net.minecraftforge.common.config.Property|getString|()Ljava/lang/String;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1764|1770|String|class|java.lang.String
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1782|1799|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1800|1806|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1807|1823|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1826|1843|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1844|1850|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1851|1868|CATEGORY_SPLITTER|field|net.minecraftforge.common.config.Configuration|CATEGORY_SPLITTER
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1901|1918|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1919|1925|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|1926|1950|addCustomCategoryComment|method|net.minecraftforge.common.config.Configuration|addCustomCategoryComment|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2018|2030|useOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useOverworld
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2033|2050|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2051|2057|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2058|2061|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2133|2143|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2155|2164|useNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useNether
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2167|2184|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2185|2191|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2192|2195|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2264|2274|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2286|2292|useEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useEnd
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2295|2312|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2313|2319|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2320|2323|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2389|2399|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2419|2425|String|class|java.lang.String
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2438|2455|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2456|2462|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2463|2479|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2482|2499|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2500|2506|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2507|2524|CATEGORY_SPLITTER|field|net.minecraftforge.common.config.Configuration|CATEGORY_SPLITTER
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2556|2573|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2574|2580|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2581|2605|addCustomCategoryComment|method|net.minecraftforge.common.config.Configuration|addCustomCategoryComment|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2662|2672|rainEffect|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|rainEffect
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2675|2692|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2693|2699|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2700|2703|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2779|2789|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2801|2819|overworldParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|overworldParticles
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2822|2839|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2840|2846|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2847|2850|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2920|2930|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2942|2963|potionEffectOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectOverworld
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2966|2983|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2984|2990|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|2991|2994|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3040|3046|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3058|3081|potionStrengthOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthOverworld
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3084|3101|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3102|3108|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3109|3112|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3164|3170|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3182|3205|potionDurationOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationOverworld
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3208|3225|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3226|3232|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3233|3236|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3319|3325|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3346|3352|String|class|java.lang.String
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3362|3379|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3380|3386|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3387|3403|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3406|3423|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3424|3430|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3431|3448|CATEGORY_SPLITTER|field|net.minecraftforge.common.config.Configuration|CATEGORY_SPLITTER
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3477|3494|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3495|3501|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3502|3526|addCustomCategoryComment|method|net.minecraftforge.common.config.Configuration|addCustomCategoryComment|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3577|3595|potionEffectNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectNether
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3598|3615|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3616|3622|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3623|3626|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3667|3673|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3685|3705|potionStrengthNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthNether
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3708|3725|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3726|3732|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3733|3736|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3782|3788|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3800|3820|potionDurationNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationNether
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3823|3840|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3841|3847|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3848|3851|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3928|3934|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3946|3961|netherParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|netherParticles
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3964|3981|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3982|3988|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|3989|3992|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4059|4069|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4088|4094|String|class|java.lang.String
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4101|4118|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4119|4125|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4126|4142|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4145|4162|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4163|4169|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4170|4187|CATEGORY_SPLITTER|field|net.minecraftforge.common.config.Configuration|CATEGORY_SPLITTER
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4213|4230|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4231|4237|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4238|4262|addCustomCategoryComment|method|net.minecraftforge.common.config.Configuration|addCustomCategoryComment|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4310|4328|potionEffectTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectTheEnd
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4331|4348|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4349|4355|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4356|4359|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4397|4403|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4415|4435|potionStrengthTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthTheEnd
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4438|4455|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4456|4462|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4463|4466|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4509|4515|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4527|4547|potionDurationTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationTheEnd
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4550|4567|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4568|4574|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4575|4578|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4652|4658|getInt|method|net.minecraftforge.common.config.Property|getInt|()I
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4670|4685|theEndParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|theEndParticles
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4688|4705|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4706|4712|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4713|4716|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4780|4790|getBoolean|method|net.minecraftforge.common.config.Property|getBoolean|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4808|4825|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4826|4832|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4833|4843|hasChanged|method|net.minecraftforge.common.config.Configuration|hasChanged|()Z
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4860|4877|DeadlyEnvironment|class|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4878|4884|config|field|com.ocdiary.DeadlyEnvironment.DeadlyEnvironment|config
+      @|com\ocdiary\DeadlyEnvironment\config\DEConfig.java|4885|4889|save|method|net.minecraftforge.common.config.Configuration|save|()V
+   Method End: config()V
+Class End  : com.ocdiary.DeadlyEnvironment.config.DEConfig
+endProcessing "com\ocdiary\DeadlyEnvironment\config\DEConfig.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\lib\refs.java" md5: b7d2213e10478e90478bbbafed2a3bb7
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\lib\refs.java|8|41|com.ocdiary.DeadlyEnvironment.lib|package|com.ocdiary.DeadlyEnvironment.lib|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|102|106|refs|class|com.ocdiary.DeadlyEnvironment.lib.refs
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|134|140|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|134|140|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|141|146|MODID|field|com.ocdiary.DeadlyEnvironment.lib.refs|MODID|
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|194|200|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|194|200|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|201|205|NAME|field|com.ocdiary.DeadlyEnvironment.lib.refs|NAME|
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|254|260|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|254|260|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|261|268|VERSION|field|com.ocdiary.DeadlyEnvironment.lib.refs|VERSION|
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|306|312|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|306|312|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|313|318|CPROX|field|com.ocdiary.DeadlyEnvironment.lib.refs|CPROX|
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|393|399|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|393|399|String|class|java.lang.String
+   @|com\ocdiary\DeadlyEnvironment\lib\refs.java|400|405|SPROX|field|com.ocdiary.DeadlyEnvironment.lib.refs|SPROX|
+Class End  : com.ocdiary.DeadlyEnvironment.lib.refs
+endProcessing "com\ocdiary\DeadlyEnvironment\lib\refs.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\main\EndEvents.java" md5: 5ef5530079212279eae986965d776a72
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|8|42|com.ocdiary.DeadlyEnvironment.main|package|com.ocdiary.DeadlyEnvironment.main|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.main.EndEvents
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|410|419|EndEvents|class|com.ocdiary.DeadlyEnvironment.main.EndEvents
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|448|458|EndEffects|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|EndEffects|
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|461|469|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|470|476|useEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useEnd
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|500|508|potionID|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionID|
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|511|519|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|520|538|potionEffectTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectTheEnd
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|562|576|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionDuration|
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|579|587|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|588|608|potionDurationTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationTheEnd
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|637|651|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionStrength|
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|654|662|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|663|683|potionStrengthTheEnd|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthTheEnd
+   Method Start: EndEffects(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|763|764|e|param|com.ocdiary.DeadlyEnvironment.main.EndEvents|EndEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|691|705|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|722|732|EndEffects|method|com.ocdiary.DeadlyEnvironment.main.EndEvents|EndEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|733|762|LivingEvent.LivingUpdateEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|778|779|e|param|com.ocdiary.DeadlyEnvironment.main.EndEvents|EndEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|780|789|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|803|815|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|831|843|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|854|866|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|868|869|e|param|com.ocdiary.DeadlyEnvironment.main.EndEvents|EndEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|870|879|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|900|908|potionID|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|917|927|EndEffects|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|EndEffects
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|966|975|dimension|field|net.minecraft.entity.Entity|dimension
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|991|1012|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1013|1019|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1020|1033|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1034|1042|potionID|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1083|1098|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1103|1115|PotionEffect|class|net.minecraft.potion.PotionEffect
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1116|1122|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1123|1136|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1137|1145|potionID|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1148|1162|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionDuration
+      @|com\ocdiary\DeadlyEnvironment\main\EndEvents.java|1164|1178|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.EndEvents|potionStrength
+   Method End: EndEffects(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+Class End  : com.ocdiary.DeadlyEnvironment.main.EndEvents
+endProcessing "com\ocdiary\DeadlyEnvironment\main\EndEvents.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\main\NetherEvents.java" md5: a1c84e0342e241d0ade5feff946bb95d
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|8|42|com.ocdiary.DeadlyEnvironment.main|package|com.ocdiary.DeadlyEnvironment.main|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.main.NetherEvents
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|410|422|NetherEvents|class|com.ocdiary.DeadlyEnvironment.main.NetherEvents
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|452|465|NetherEffects|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|NetherEffects|
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|468|476|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|477|486|useNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useNether
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|510|518|potionID|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionID|
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|521|529|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|530|548|potionEffectNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectNether
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|572|586|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionDuration|
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|589|597|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|598|618|potionDurationNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationNether
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|647|661|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionStrength|
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|664|672|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|673|693|potionStrengthNether|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthNether
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|721|730|particles|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|particles|
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|733|741|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|742|757|netherParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|netherParticles
+   Method Start: NetherEffects(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|840|841|e|param|com.ocdiary.DeadlyEnvironment.main.NetherEvents|NetherEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|765|779|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|796|809|NetherEffects|method|com.ocdiary.DeadlyEnvironment.main.NetherEvents|NetherEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|810|839|LivingEvent.LivingUpdateEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|855|856|e|param|com.ocdiary.DeadlyEnvironment.main.NetherEvents|NetherEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|857|866|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|880|892|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|908|920|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|931|943|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|945|946|e|param|com.ocdiary.DeadlyEnvironment.main.NetherEvents|NetherEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|947|956|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|977|985|potionID|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|994|1007|NetherEffects|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|NetherEffects
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1046|1055|dimension|field|net.minecraft.entity.Entity|dimension
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1072|1093|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1094|1100|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1101|1114|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1115|1123|potionID|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1164|1179|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1184|1196|PotionEffect|class|net.minecraft.potion.PotionEffect
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1197|1203|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1204|1217|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1218|1226|potionID|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1229|1243|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionDuration
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1245|1259|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|potionStrength
+      @|com\ocdiary\DeadlyEnvironment\main\NetherEvents.java|1268|1277|particles|field|com.ocdiary.DeadlyEnvironment.main.NetherEvents|particles
+   Method End: NetherEffects(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+Class End  : com.ocdiary.DeadlyEnvironment.main.NetherEvents
+endProcessing "com\ocdiary\DeadlyEnvironment\main\NetherEvents.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java" md5: 9fbabf30ea6c75fde2a03e97ebadc1ed
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|8|42|com.ocdiary.DeadlyEnvironment.main|package|com.ocdiary.DeadlyEnvironment.main|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.main.OverworldEvents
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|410|425|OverworldEvents|class|com.ocdiary.DeadlyEnvironment.main.OverworldEvents
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|455|460|rainE|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|rainE|
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|463|471|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|472|482|rainEffect|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|rainEffect
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|510|526|OverworldEffects|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|OverworldEffects|
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|529|537|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|538|550|useOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|useOverworld
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|574|582|potionID|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionID|
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|585|593|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|594|615|potionEffectOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionEffectOverworld
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|639|653|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionDuration|
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|656|664|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|665|688|potionDurationOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionDurationOverworld
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|717|731|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionStrength|
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|734|742|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|743|766|potionStrengthOverworld|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|potionStrengthOverworld
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|794|803|particles|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|particles|
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|806|814|DEConfig|class|com.ocdiary.DeadlyEnvironment.config.DEConfig
+   @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|815|833|overworldParticles|field|com.ocdiary.DeadlyEnvironment.config.DEConfig|overworldParticles
+   Method Start: OverworldEffects(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|919|920|e|param|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|OverworldEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|841|855|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|872|888|OverworldEffects|method|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|OverworldEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|889|918|LivingEvent.LivingUpdateEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|934|935|e|param|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|OverworldEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|936|945|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|959|971|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|987|999|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1010|1022|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1024|1025|e|param|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|OverworldEffects|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1026|1035|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1056|1064|potionID|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1073|1089|OverworldEffects|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|OverworldEffects
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1121|1126|rainE|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|rainE
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1170|1178|worldObj|field|net.minecraft.entity.Entity|worldObj
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1179|1188|isRaining|method|net.minecraft.world.World|isRaining|()Z
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1201|1210|dimension|field|net.minecraft.entity.Entity|dimension
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1226|1247|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1248|1254|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1255|1268|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1269|1277|potionID|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1322|1337|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1342|1354|PotionEffect|class|net.minecraft.potion.PotionEffect
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1355|1361|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1362|1375|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1376|1384|potionID|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1387|1401|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionDuration
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1403|1417|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionStrength
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1426|1435|particles|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|particles
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1499|1504|rainE|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|rainE
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1548|1557|dimension|field|net.minecraft.entity.Entity|dimension
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1573|1594|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1595|1601|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1602|1615|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1616|1624|potionID|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1669|1684|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1689|1701|PotionEffect|class|net.minecraft.potion.PotionEffect
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1702|1708|Potion|class|net.minecraft.potion.Potion
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1709|1722|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1723|1731|potionID|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionID
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1734|1748|potionDuration|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionDuration
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1750|1764|potionStrength|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|potionStrength
+      @|com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java|1773|1782|particles|field|com.ocdiary.DeadlyEnvironment.main.OverworldEvents|particles
+   Method End: OverworldEffects(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+Class End  : com.ocdiary.DeadlyEnvironment.main.OverworldEvents
+endProcessing "com\ocdiary\DeadlyEnvironment\main\OverworldEvents.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\proxies\client.java" md5: a4e3915f3af318224730d0ea88bff39a
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\proxies\client.java|8|45|com.ocdiary.DeadlyEnvironment.proxies|package|com.ocdiary.DeadlyEnvironment.proxies|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.proxies.client
+   @|com\ocdiary\DeadlyEnvironment\proxies\client.java|315|321|client|class|com.ocdiary.DeadlyEnvironment.proxies.client
+   @|com\ocdiary\DeadlyEnvironment\proxies\client.java|330|336|common|class|com.ocdiary.DeadlyEnvironment.proxies.common
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|404|405|e|param|com.ocdiary.DeadlyEnvironment.proxies.client|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|345|353|Override|class|java.lang.Override
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|370|377|preInit|method|com.ocdiary.DeadlyEnvironment.proxies.common|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|378|403|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|475|476|e|param|com.ocdiary.DeadlyEnvironment.proxies.client|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|422|430|Override|class|java.lang.Override
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|447|451|init|method|com.ocdiary.DeadlyEnvironment.proxies.common|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|452|474|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|554|555|e|param|com.ocdiary.DeadlyEnvironment.proxies.client|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|493|501|Override|class|java.lang.Override
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|518|526|postInit|method|com.ocdiary.DeadlyEnvironment.proxies.common|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\client.java|527|553|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.ocdiary.DeadlyEnvironment.proxies.client
+endProcessing "com\ocdiary\DeadlyEnvironment\proxies\client.java"
+
+startProcessing "com\ocdiary\DeadlyEnvironment\proxies\common.java" md5: 0a606827a725e3436d1c94a9a4729c45
+Cache Hit!
+@|com\ocdiary\DeadlyEnvironment\proxies\common.java|8|45|com.ocdiary.DeadlyEnvironment.proxies|package|com.ocdiary.DeadlyEnvironment.proxies|(file)
+Class Start: com.ocdiary.DeadlyEnvironment.proxies.common
+   @|com\ocdiary\DeadlyEnvironment\proxies\common.java|315|321|common|class|com.ocdiary.DeadlyEnvironment.proxies.common
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|375|376|e|param|com.ocdiary.DeadlyEnvironment.proxies.common|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|341|348|preInit|method|com.ocdiary.DeadlyEnvironment.proxies.common|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|349|374|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|431|432|e|param|com.ocdiary.DeadlyEnvironment.proxies.common|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|403|407|init|method|com.ocdiary.DeadlyEnvironment.proxies.common|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|408|430|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|495|496|e|param|com.ocdiary.DeadlyEnvironment.proxies.common|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|e|0
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|459|467|postInit|method|com.ocdiary.DeadlyEnvironment.proxies.common|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ocdiary\DeadlyEnvironment\proxies\common.java|468|494|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.ocdiary.DeadlyEnvironment.proxies.common
+endProcessing "com\ocdiary\DeadlyEnvironment\proxies\common.java"
+
