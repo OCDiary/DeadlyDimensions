@@ -10,21 +10,23 @@ import net.minecraft.init.Biomes;
 import net.minecraft.util.ReportedException;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldType;
-import net.minecraft.world.gen.ChunkProviderSettings;
+import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.IntCache;
 import net.minecraft.world.storage.WorldInfo;
 
 public class BiomeProvider
 {
-    private ChunkProviderSettings field_190945_a;
+    private ChunkGeneratorSettings settings;
     private GenLayer genBiomes;
     /** A GenLayer containing the indices into BiomeGenBase.biomeList[] */
     private GenLayer biomeIndexLayer;
     /** The biome list. */
     private final BiomeCache biomeCache;
+    /** A list of biomes that the player can spawn in. */
     private final List<Biome> biomesToSpawnIn;
     public static List<Biome> allowedBiomes = Lists.newArrayList(Biomes.FOREST, Biomes.PLAINS, Biomes.TAIGA, Biomes.TAIGA_HILLS, Biomes.FOREST_HILLS, Biomes.JUNGLE, Biomes.JUNGLE_HILLS);
+
     protected BiomeProvider()
     {
         this.biomeCache = new BiomeCache(this);
@@ -37,10 +39,10 @@ public class BiomeProvider
 
         if (worldTypeIn == WorldType.CUSTOMIZED && !options.isEmpty())
         {
-            this.field_190945_a = ChunkProviderSettings.Factory.jsonToFactory(options).build();
+            this.settings = ChunkGeneratorSettings.Factory.jsonToFactory(options).build();
         }
 
-        GenLayer[] agenlayer = GenLayer.initializeAllBiomeGenerators(seed, worldTypeIn, this.field_190945_a);
+        GenLayer[] agenlayer = GenLayer.initializeAllBiomeGenerators(seed, worldTypeIn, this.settings);
         agenlayer = getModdedBiomeGenerators(worldTypeIn, seed, agenlayer);
         this.genBiomes = agenlayer[0];
         this.biomeIndexLayer = agenlayer[1];
@@ -51,6 +53,9 @@ public class BiomeProvider
         this(info.getSeed(), info.getTerrainType(), info.getGeneratorOptions());
     }
 
+    /**
+     * Gets the list of valid biomes for the player to spawn in.
+     */
     public List<Biome> getBiomesToSpawnIn()
     {
         return this.biomesToSpawnIn;
@@ -239,13 +244,13 @@ public class BiomeProvider
         return event.getNewBiomeGens();
     }
 
-    public boolean func_190944_c()
+    public boolean isFixedBiome()
     {
-        return this.field_190945_a != null && this.field_190945_a.fixedBiome >= 0;
+        return this.settings != null && this.settings.fixedBiome >= 0;
     }
 
-    public Biome func_190943_d()
+    public Biome getFixedBiome()
     {
-        return this.field_190945_a != null && this.field_190945_a.fixedBiome >= 0 ? Biome.getBiomeForId(this.field_190945_a.fixedBiome) : null;
+        return this.settings != null && this.settings.fixedBiome >= 0 ? Biome.getBiomeForId(this.settings.fixedBiome) : null;
     }
 }

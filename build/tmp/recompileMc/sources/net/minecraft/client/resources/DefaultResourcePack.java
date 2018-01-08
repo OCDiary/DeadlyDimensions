@@ -30,7 +30,7 @@ public class DefaultResourcePack implements IResourcePack
 
     public InputStream getInputStream(ResourceLocation location) throws IOException
     {
-        InputStream inputstream = this.getResourceStream(location);
+        InputStream inputstream = this.getInputStreamAssets(location);
 
         if (inputstream != null)
         {
@@ -38,7 +38,7 @@ public class DefaultResourcePack implements IResourcePack
         }
         else
         {
-            InputStream inputstream1 = this.getInputStreamAssets(location);
+            InputStream inputstream1 = this.getResourceStream(location);
 
             if (inputstream1 != null)
             {
@@ -66,7 +66,7 @@ public class DefaultResourcePack implements IResourcePack
         try
         {
             URL url = DefaultResourcePack.class.getResource(s);
-            return url != null && FolderResourcePack.func_191384_a(new File(url.getFile()), s) ? DefaultResourcePack.class.getResourceAsStream(s) : null;
+            return url != null && FolderResourcePack.validatePath(new File(url.getFile()), s) ? DefaultResourcePack.class.getResourceAsStream(s) : null;
         }
         catch (IOException var4)
         {
@@ -90,7 +90,7 @@ public class DefaultResourcePack implements IResourcePack
         try
         {
             InputStream inputstream = new FileInputStream(this.resourceIndex.getPackMcmeta());
-            return AbstractResourcePack.readMetadata(metadataSerializer, inputstream, metadataSectionName);
+            return (T)AbstractResourcePack.readMetadata(metadataSerializer, inputstream, metadataSectionName);
         }
         catch (RuntimeException var4)
         {

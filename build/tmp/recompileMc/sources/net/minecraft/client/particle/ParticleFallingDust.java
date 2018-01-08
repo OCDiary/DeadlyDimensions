@@ -5,10 +5,11 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.VertexBuffer;
+import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -42,12 +43,12 @@ public class ParticleFallingDust extends Particle
     /**
      * Renders the particle
      */
-    public void renderParticle(VertexBuffer worldRendererIn, Entity entityIn, float partialTicks, float rotationX, float rotationZ, float rotationYZ, float rotationXY, float rotationXZ)
+    public void renderParticle(BufferBuilder buffer, Entity entityIn, float partialTicks, float rotationX, float rotationZ, float rotationYZ, float rotationXY, float rotationXZ)
     {
         float f = ((float)this.particleAge + partialTicks) / (float)this.particleMaxAge * 32.0F;
-        f = MathHelper.clamp_float(f, 0.0F, 1.0F);
+        f = MathHelper.clamp(f, 0.0F, 1.0F);
         this.particleScale = this.oSize * f;
-        super.renderParticle(worldRendererIn, entityIn, partialTicks, rotationX, rotationZ, rotationYZ, rotationXY, rotationXZ);
+        super.renderParticle(buffer, entityIn, partialTicks, rotationX, rotationZ, rotationYZ, rotationXY, rotationXZ);
     }
 
     public void onUpdate()
@@ -64,13 +65,13 @@ public class ParticleFallingDust extends Particle
         this.prevParticleAngle = this.particleAngle;
         this.particleAngle += (float)Math.PI * this.rotSpeed * 2.0F;
 
-        if (this.isCollided)
+        if (this.onGround)
         {
             this.prevParticleAngle = this.particleAngle = 0.0F;
         }
 
         this.setParticleTextureIndex(7 - this.particleAge * 8 / this.particleMaxAge);
-        this.moveEntity(this.motionX, this.motionY, this.motionZ);
+        this.move(this.motionX, this.motionY, this.motionZ);
         this.motionY -= 0.003000000026077032D;
         this.motionY = Math.max(this.motionY, -0.14000000059604645D);
     }
@@ -89,7 +90,7 @@ public class ParticleFallingDust extends Particle
                 }
                 else
                 {
-                    int i = Minecraft.getMinecraft().getBlockColors().getColor(iblockstate);
+                    int i = Minecraft.getMinecraft().getBlockColors().getColor(iblockstate, worldIn, new BlockPos(xCoordIn, yCoordIn, zCoordIn));
 
                     if (iblockstate.getBlock() instanceof BlockFalling)
                     {

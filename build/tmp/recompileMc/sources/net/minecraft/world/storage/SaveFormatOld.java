@@ -111,7 +111,7 @@ public class SaveFormatOld implements ISaveFormat
         }
         catch (Exception exception)
         {
-            LOGGER.error("Exception reading {}", new Object[] {p_186353_0_, exception});
+            LOGGER.error("Exception reading {}", p_186353_0_, exception);
             return null;
         }
     }
@@ -191,7 +191,7 @@ public class SaveFormatOld implements ISaveFormat
             }
             catch (Throwable throwable)
             {
-                LOGGER.warn("Couldn\'t make new level", throwable);
+                LOGGER.warn("Couldn't make new level", throwable);
                 return false;
             }
         }
@@ -211,11 +211,11 @@ public class SaveFormatOld implements ISaveFormat
         }
         else
         {
-            LOGGER.info("Deleting level {}", new Object[] {saveName});
+            LOGGER.info("Deleting level {}", (Object)saveName);
 
             for (int i = 1; i <= 5; ++i)
             {
-                LOGGER.info("Attempt {}...", new Object[] {Integer.valueOf(i)});
+                LOGGER.info("Attempt {}...", (int)i);
 
                 if (deleteFiles(file1.listFiles()))
                 {
@@ -249,17 +249,17 @@ public class SaveFormatOld implements ISaveFormat
     {
         for (File file1 : files)
         {
-            LOGGER.debug("Deleting {}", new Object[] {file1});
+            LOGGER.debug("Deleting {}", (Object)file1);
 
             if (file1.isDirectory() && !deleteFiles(file1.listFiles()))
             {
-                LOGGER.warn("Couldn\'t delete directory {}", new Object[] {file1});
+                LOGGER.warn("Couldn't delete directory {}", (Object)file1);
                 return false;
             }
 
             if (!file1.delete())
             {
-                LOGGER.warn("Couldn\'t delete file {}", new Object[] {file1});
+                LOGGER.warn("Couldn't delete file {}", (Object)file1);
                 return false;
             }
         }

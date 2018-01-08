@@ -1,9 +1,7 @@
-Selected version 13.20.0.2230Selected version 13.20.0.2230
-
-This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own peril.This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own peril.
+This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.
 
 #################################################
-         ForgeGradle 2.2-SNAPSHOT-2112b0a        
+         ForgeGradle 2.3-SNAPSHOT-583d1ba        
   https://github.com/MinecraftForge/ForgeGradle  
 #################################################
                Powered by MCP unknown               
@@ -11,43 +9,9 @@ This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own per
          by: Searge, ProfMobius, Fesh0r,         
          R4wk, ZeuX, IngisKahn, bspkrs           
 #################################################
-:deobfCompileDummyTask
-:getVersionJson
-:extractUserdev
-Download http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.11.2-13.20.0.2230/forge-1.11.2-13.20.0.2230.pom
-Download http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.11.2-13.20.0.2230/forge-1.11.2-13.20.0.2230-userdev.jar
-:downloadClient SKIPPED
-:downloadServer SKIPPED
-:splitServerJar SKIPPED
-:mergeJars SKIPPED
-:applyBinaryPatches
-:deobfProvidedDummyTask
-:extractDependencyATs SKIPPED
-:extractMcpData SKIPPED
-:extractMcpMappings SKIPPED
-:genSrgs SKIPPED
-:deobfMcMCP
-Applying SpecialSource...
-Applying Exceptor...
-:sourceApiJava UP-TO-DATE
-:compileApiJava UP-TO-DATE
-:processApiResources UP-TO-DATE
-:apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJava
-:processResources
-:classes
-:jar
-:sourceTestJava UP-TO-DATE
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
-:reobfJar
-:assemble
-:check UP-TO-DATE
-:build
+Version string '1.12.2_1' does not match SemVer specification 
+You should try SemVer : http://semver.org/
 
-BUILD SUCCESSFUL
+CONFIGURE SUCCESSFUL
 
-Total time: 31.928 secs
+Total time: 8.982 secs

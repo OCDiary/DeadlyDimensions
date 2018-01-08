@@ -107,7 +107,7 @@ public class SimpleBakedModel implements IBakedModel
 
                 for (EnumFacing enumfacing : EnumFacing.values())
                 {
-                    this.builderFaceQuads.put(enumfacing, Lists.<BakedQuad>newArrayList());
+                    this.builderFaceQuads.put(enumfacing, Lists.newArrayList());
                 }
 
                 this.builderItemOverrideList = overrides;
@@ -134,7 +134,7 @@ public class SimpleBakedModel implements IBakedModel
 
             public SimpleBakedModel.Builder addFaceQuad(EnumFacing facing, BakedQuad quad)
             {
-                ((List)this.builderFaceQuads.get(facing)).add(quad);
+                (this.builderFaceQuads.get(facing)).add(quad);
                 return this;
             }
 

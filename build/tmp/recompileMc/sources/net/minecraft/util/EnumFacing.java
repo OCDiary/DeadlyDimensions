@@ -79,9 +79,6 @@ public enum EnumFacing implements IStringSerializable
      */
     public EnumFacing getOpposite()
     {
-        /**
-         * Get a Facing by it's index (0-5). The order is D-U-N-S-W-E. Named getFront for legacy reasons.
-         */
         return getFront(this.opposite);
     }
 
@@ -253,7 +250,7 @@ public enum EnumFacing implements IStringSerializable
      */
     public static EnumFacing getFront(int index)
     {
-        return VALUES[MathHelper.abs_int(index % VALUES.length)];
+        return VALUES[MathHelper.abs(index % VALUES.length)];
     }
 
     /**
@@ -261,7 +258,7 @@ public enum EnumFacing implements IStringSerializable
      */
     public static EnumFacing getHorizontal(int horizontalIndexIn)
     {
-        return HORIZONTALS[MathHelper.abs_int(horizontalIndexIn % HORIZONTALS.length)];
+        return HORIZONTALS[MathHelper.abs(horizontalIndexIn % HORIZONTALS.length)];
     }
 
     /**
@@ -269,10 +266,7 @@ public enum EnumFacing implements IStringSerializable
      */
     public static EnumFacing fromAngle(double angle)
     {
-        /**
-         * Get a Facing by it's horizontal index (0-3). The order is S-W-N-E.
-         */
-        return getHorizontal(MathHelper.floor_double(angle / 90.0D + 0.5D) & 3);
+        return getHorizontal(MathHelper.floor(angle / 90.0D + 0.5D) & 3);
     }
 
     public float getHorizontalAngle()
@@ -330,24 +324,24 @@ public enum EnumFacing implements IStringSerializable
         throw new IllegalArgumentException("No such direction: " + axisDirectionIn + " " + axisIn);
     }
 
-    public static EnumFacing func_190914_a(BlockPos p_190914_0_, EntityLivingBase p_190914_1_)
+    public static EnumFacing getDirectionFromEntityLiving(BlockPos pos, EntityLivingBase placer)
     {
-        if (Math.abs(p_190914_1_.posX - (double)((float)p_190914_0_.getX() + 0.5F)) < 2.0D && Math.abs(p_190914_1_.posZ - (double)((float)p_190914_0_.getZ() + 0.5F)) < 2.0D)
+        if (Math.abs(placer.posX - (double)((float)pos.getX() + 0.5F)) < 2.0D && Math.abs(placer.posZ - (double)((float)pos.getZ() + 0.5F)) < 2.0D)
         {
-            double d0 = p_190914_1_.posY + (double)p_190914_1_.getEyeHeight();
+            double d0 = placer.posY + (double)placer.getEyeHeight();
 
-            if (d0 - (double)p_190914_0_.getY() > 2.0D)
+            if (d0 - (double)pos.getY() > 2.0D)
             {
                 return UP;
             }
 
-            if ((double)p_190914_0_.getY() - d0 > 0.0D)
+            if ((double)pos.getY() - d0 > 0.0D)
             {
                 return DOWN;
             }
         }
 
-        return p_190914_1_.getHorizontalFacing().getOpposite();
+        return placer.getHorizontalFacing().getOpposite();
     }
 
     /**
@@ -496,7 +490,7 @@ public enum EnumFacing implements IStringSerializable
                 case VERTICAL:
                     return new EnumFacing[] {EnumFacing.UP, EnumFacing.DOWN};
                 default:
-                    throw new Error("Someone\'s been tampering with the universe!");
+                    throw new Error("Someone's been tampering with the universe!");
             }
         }
 

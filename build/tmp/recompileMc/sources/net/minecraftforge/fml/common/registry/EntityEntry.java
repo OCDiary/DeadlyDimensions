@@ -21,18 +21,34 @@ package net.minecraftforge.fml.common.registry;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityList.EntityEggInfo;
-import net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl;
+import net.minecraft.world.World;
+import net.minecraftforge.registries.IForgeRegistryEntry.Impl;
+
+import java.util.function.Function;
 
 public class EntityEntry extends Impl<EntityEntry>
 {
     private Class<? extends Entity> cls;
     private String name;
     private EntityEggInfo egg;
+    Function<World, ? extends Entity> factory;
 
     public EntityEntry(Class<? extends Entity> cls, String name)
     {
         this.cls = cls;
         this.name = name;
+        init();
+    }
+
+    //Protected method, to make this optional, in case people subclass this to have a better factory.
+    protected void init()
+    {
+        this.factory = new EntityEntryBuilder.ConstructorFactory<Entity>(this.cls) {
+            @Override
+            protected String describeEntity() {
+                return String.valueOf(EntityEntry.this.getRegistryName());
+            }
+        };
     }
 
     public Class<? extends Entity> getEntityClass(){ return this.cls; }
@@ -44,5 +60,10 @@ public class EntityEntry extends Impl<EntityEntry>
         this.egg = egg;
         if (this.getRegistryName() != null)
             EntityList.ENTITY_EGGS.put(this.getRegistryName(), egg);
+    }
+
+    public Entity newInstance(World world)
+    {
+        return this.factory.apply(world);
     }
 }

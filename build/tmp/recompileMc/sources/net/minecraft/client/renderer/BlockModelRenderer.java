@@ -33,14 +33,14 @@ public class BlockModelRenderer
         this.blockColors = blockColorsIn;
     }
 
-    public boolean renderModel(IBlockAccess blockAccessIn, IBakedModel modelIn, IBlockState blockStateIn, BlockPos blockPosIn, VertexBuffer buffer, boolean checkSides)
+    public boolean renderModel(IBlockAccess blockAccessIn, IBakedModel modelIn, IBlockState blockStateIn, BlockPos blockPosIn, BufferBuilder buffer, boolean checkSides)
     {
         return this.renderModel(blockAccessIn, modelIn, blockStateIn, blockPosIn, buffer, checkSides, MathHelper.getPositionRandom(blockPosIn));
     }
 
-    public boolean renderModel(IBlockAccess worldIn, IBakedModel modelIn, IBlockState stateIn, BlockPos posIn, VertexBuffer buffer, boolean checkSides, long rand)
+    public boolean renderModel(IBlockAccess worldIn, IBakedModel modelIn, IBlockState stateIn, BlockPos posIn, BufferBuilder buffer, boolean checkSides, long rand)
     {
-        boolean flag = Minecraft.isAmbientOcclusionEnabled() && stateIn.getLightValue() == 0 && modelIn.isAmbientOcclusion();
+        boolean flag = Minecraft.isAmbientOcclusionEnabled() && stateIn.getLightValue(worldIn, posIn) == 0 && modelIn.isAmbientOcclusion();
 
         try
         {
@@ -56,7 +56,7 @@ public class BlockModelRenderer
         }
     }
 
-    public boolean renderModelSmooth(IBlockAccess worldIn, IBakedModel modelIn, IBlockState stateIn, BlockPos posIn, VertexBuffer buffer, boolean checkSides, long rand)
+    public boolean renderModelSmooth(IBlockAccess worldIn, IBakedModel modelIn, IBlockState stateIn, BlockPos posIn, BufferBuilder buffer, boolean checkSides, long rand)
     {
         boolean flag = false;
         float[] afloat = new float[EnumFacing.values().length * 2];
@@ -85,7 +85,7 @@ public class BlockModelRenderer
         return flag;
     }
 
-    public boolean renderModelFlat(IBlockAccess worldIn, IBakedModel modelIn, IBlockState stateIn, BlockPos posIn, VertexBuffer buffer, boolean checkSides, long rand)
+    public boolean renderModelFlat(IBlockAccess worldIn, IBakedModel modelIn, IBlockState stateIn, BlockPos posIn, BufferBuilder buffer, boolean checkSides, long rand)
     {
         boolean flag = false;
         BitSet bitset = new BitSet(3);
@@ -113,17 +113,17 @@ public class BlockModelRenderer
         return flag;
     }
 
-    private void renderQuadsSmooth(IBlockAccess blockAccessIn, IBlockState stateIn, BlockPos posIn, VertexBuffer buffer, List<BakedQuad> list, float[] quadBounds, BitSet bitSet, BlockModelRenderer.AmbientOcclusionFace aoFace)
+    private void renderQuadsSmooth(IBlockAccess blockAccessIn, IBlockState stateIn, BlockPos posIn, BufferBuilder buffer, List<BakedQuad> list, float[] quadBounds, BitSet bitSet, BlockModelRenderer.AmbientOcclusionFace aoFace)
     {
-        Vec3d vec3d = stateIn.func_191059_e(blockAccessIn, posIn);
-        double d0 = (double)posIn.getX() + vec3d.xCoord;
-        double d1 = (double)posIn.getY() + vec3d.yCoord;
-        double d2 = (double)posIn.getZ() + vec3d.zCoord;
+        Vec3d vec3d = stateIn.getOffset(blockAccessIn, posIn);
+        double d0 = (double)posIn.getX() + vec3d.x;
+        double d1 = (double)posIn.getY() + vec3d.y;
+        double d2 = (double)posIn.getZ() + vec3d.z;
         int i = 0;
 
         for (int j = list.size(); i < j; ++i)
         {
-            BakedQuad bakedquad = (BakedQuad)list.get(i);
+            BakedQuad bakedquad = list.get(i);
             this.fillQuadBounds(stateIn, bakedquad.getVertexData(), bakedquad.getFace(), quadBounds, bitSet);
             aoFace.updateVertexBrightness(blockAccessIn, stateIn, posIn, bakedquad.getFace(), quadBounds, bitSet);
             buffer.addVertexData(bakedquad.getVertexData());
@@ -235,17 +235,17 @@ public class BlockModelRenderer
         }
     }
 
-    private void renderQuadsFlat(IBlockAccess blockAccessIn, IBlockState stateIn, BlockPos posIn, int brightnessIn, boolean ownBrightness, VertexBuffer buffer, List<BakedQuad> list, BitSet bitSet)
+    private void renderQuadsFlat(IBlockAccess blockAccessIn, IBlockState stateIn, BlockPos posIn, int brightnessIn, boolean ownBrightness, BufferBuilder buffer, List<BakedQuad> list, BitSet bitSet)
     {
-        Vec3d vec3d = stateIn.func_191059_e(blockAccessIn, posIn);
-        double d0 = (double)posIn.getX() + vec3d.xCoord;
-        double d1 = (double)posIn.getY() + vec3d.yCoord;
-        double d2 = (double)posIn.getZ() + vec3d.zCoord;
+        Vec3d vec3d = stateIn.getOffset(blockAccessIn, posIn);
+        double d0 = (double)posIn.getX() + vec3d.x;
+        double d1 = (double)posIn.getY() + vec3d.y;
+        double d2 = (double)posIn.getZ() + vec3d.z;
         int i = 0;
 
         for (int j = list.size(); i < j; ++i)
         {
-            BakedQuad bakedquad = (BakedQuad)list.get(i);
+            BakedQuad bakedquad = list.get(i);
 
             if (ownBrightness)
             {
@@ -335,26 +335,26 @@ public class BlockModelRenderer
     private void renderModelBrightnessColorQuads(float brightness, float red, float green, float blue, List<BakedQuad> listQuads)
     {
         Tessellator tessellator = Tessellator.getInstance();
-        VertexBuffer vertexbuffer = tessellator.getBuffer();
+        BufferBuilder bufferbuilder = tessellator.getBuffer();
         int i = 0;
 
         for (int j = listQuads.size(); i < j; ++i)
         {
-            BakedQuad bakedquad = (BakedQuad)listQuads.get(i);
-            vertexbuffer.begin(7, DefaultVertexFormats.ITEM);
-            vertexbuffer.addVertexData(bakedquad.getVertexData());
+            BakedQuad bakedquad = listQuads.get(i);
+            bufferbuilder.begin(7, DefaultVertexFormats.ITEM);
+            bufferbuilder.addVertexData(bakedquad.getVertexData());
 
             if (bakedquad.hasTintIndex())
             {
-                vertexbuffer.putColorRGB_F4(red * brightness, green * brightness, blue * brightness);
+                bufferbuilder.putColorRGB_F4(red * brightness, green * brightness, blue * brightness);
             }
             else
             {
-                vertexbuffer.putColorRGB_F4(brightness, brightness, brightness);
+                bufferbuilder.putColorRGB_F4(brightness, brightness, brightness);
             }
 
             Vec3i vec3i = bakedquad.getFace().getDirectionVec();
-            vertexbuffer.putNormal((float)vec3i.getX(), (float)vec3i.getY(), (float)vec3i.getZ());
+            bufferbuilder.putNormal((float)vec3i.getX(), (float)vec3i.getY(), (float)vec3i.getZ());
             tessellator.draw();
         }
     }

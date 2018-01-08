@@ -24,9 +24,9 @@ public class GuiUtilRenderComponents
         List<ITextComponent> list = Lists.<ITextComponent>newArrayList();
         List<ITextComponent> list1 = Lists.newArrayList(textComponent);
 
-        for (int j = 0; j < ((List)list1).size(); ++j)
+        for (int j = 0; j < list1.size(); ++j)
         {
-            ITextComponent itextcomponent1 = (ITextComponent)list1.get(j);
+            ITextComponent itextcomponent1 = list1.get(j);
             String s = itextcomponent1.getUnformattedComponentText();
             boolean flag = false;
 
