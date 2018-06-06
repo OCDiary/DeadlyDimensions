@@ -1,0 +1,11 @@
+#English US language file for The Oink Mod
+
+
+#*******Creative Tab Name*******
+itemGroup.theoink=The Oink
+
+#*******Misc*******
+press.for.info.name=Press %s for more information
+
+#******Items******
+item.de_ring.name=The Ring
