@@ -38,24 +38,19 @@ public class DeadlyDimensions {
 
     public static Configuration config;
 
-    public static Logger log = FMLLog.getLogger();
-
     @EventHandler
     public void preInit(FMLPreInitializationEvent e){
-        log.info("Deadly Environment Pre-Init");
-        proxy.preInit(e);
+        proxy.preInit();
 
         config = new Configuration(e.getSuggestedConfigurationFile());
         DEConfig.config();
     }
     @EventHandler
     public void init(FMLInitializationEvent e){
-        log.info("Deadly Environment Init");
-        proxy.init(e);
+        proxy.init();
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent e){
-        log.info("Deadly Environment Post-Init");
-        proxy.postInit(e);
+        proxy.postInit();
     }
 }

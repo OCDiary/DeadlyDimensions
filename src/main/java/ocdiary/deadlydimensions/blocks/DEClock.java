@@ -3,6 +3,7 @@ package ocdiary.deadlydimensions.blocks;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.tileentity.TileEntity;
@@ -21,6 +22,7 @@ public class DEClock extends BlockContainer implements DEModelRegistry {
         super(materialIn);
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
+        this.setCreativeTab(CreativeTabs.MISC);
 
         DEBlocks.BLOCKS.add(this);
         DEItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

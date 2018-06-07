@@ -9,13 +9,13 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
 
-    public void preInit(FMLPreInitializationEvent e) {
+    public void preInit() {
     }
 
-    public void init(FMLInitializationEvent e) {
+    public void init() {
     }
 
-    public void postInit(FMLPostInitializationEvent e) {
+    public void postInit() {
     }
 
     public void registerItemRenderer(Item item, int meta, String id) {

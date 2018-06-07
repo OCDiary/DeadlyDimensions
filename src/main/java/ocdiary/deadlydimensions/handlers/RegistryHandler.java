@@ -6,6 +6,8 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import ocdiary.deadlydimensions.blocks.tiles.TileDEClock;
 import ocdiary.deadlydimensions.init.DEBlocks;
 import ocdiary.deadlydimensions.init.DEItems;
 
@@ -26,6 +28,7 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void blockRegister(RegistryEvent.Register<Block> event){
         event.getRegistry().registerAll((DEBlocks.BLOCKS.toArray(new Block[0])));
+        GameRegistry.registerTileEntity(TileDEClock.class, DEBlocks.DE_CLOCK.getRegistryName().getResourcePath());
     }
 
     @SubscribeEvent

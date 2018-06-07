@@ -7,7 +7,7 @@ public class TileDEClock extends TileEntity implements ITickable {
     @Override
     public void update() {
         if(!world.isRemote){
-            world.getMinecraftServer().worlds[0].getWorldTime();
+            System.out.println(world.getMinecraftServer().worlds[0].getWorldTime());
         }
     }
 }
